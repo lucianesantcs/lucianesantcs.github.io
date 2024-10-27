@@ -4,31 +4,34 @@ import linkedin16 from "@/assets/images/svg/linkedin16.svg";
 import dribbble16 from "@/assets/images/svg/dribbble16.svg";
 
 interface SocialIconsProps {
-  showLabel: boolean;
+  showLabel?: boolean;
+  position?: 'vertical';
 }
 
-const SocialIcons = ({ showLabel }: SocialIconsProps) => {
+const SocialIcons = ({ showLabel, position }: SocialIconsProps) => {
+  const setPosition = position === 'vertical' ? 'flex-col' : '';
+
   return (
-    <nav className="sm:hidden md:flex gap-3">
+    <nav className={`sm:hidden md:flex gap-3 ${setPosition}`}>
       <a href="" className="flex gap-3 items-center">
         <Download color="#e5e5e5" size={16} />
-        {showLabel && <span className="uppercase">Download CV</span>}
+        {showLabel && <span className="font-serif text-xs font-semibold uppercase">Download CV</span>}
       </a>
       <a href="" className="flex gap-3 items-center">
         <img src={github16} style={{ height: 16, width: 16 }} />
-        {showLabel && <span className="uppercase">Github</span>}
+        {showLabel && <span className="font-serif text-xs font-semibold uppercase">Github</span>}
       </a>
       <a href="" className="flex gap-3 items-center">
         <img src={linkedin16} style={{ height: 16, width: 16 }} />
-        {showLabel && <span className="uppercase">Linkedin</span>}
+        {showLabel && <span className="font-serif text-xs font-semibold uppercase">Linkedin</span>}
       </a>
       <a href="" className="flex gap-3 items-center">
         <img src={dribbble16} style={{ height: 16, width: 16 }} />
-        {showLabel && <span className="uppercase">Dribbble</span>}
+        {showLabel && <span className="font-serif text-xs font-semibold uppercase">Dribbble</span>}
       </a>
       <a href="" className="flex gap-3 items-center">
         <Mail color="#e5e5e5" size={16} />
-        {showLabel && <span className="uppercase">Email</span>}
+        {showLabel && <span className="font-serif text-xs font-semibold uppercase">Email</span>}
       </a>
     </nav>
   );
