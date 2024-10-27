@@ -20,6 +20,16 @@ body {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
 @layer base {
   :root {
     --background: 240 10% 3.9%;
