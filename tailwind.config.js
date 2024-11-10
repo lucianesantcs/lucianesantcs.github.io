@@ -55,6 +55,9 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
+      maxWidth: {
+        '144': '90rem',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

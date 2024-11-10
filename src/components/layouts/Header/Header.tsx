@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="flex justify-between md:justify-start px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40">
+    <header className=" max-w-144 mx-auto flex justify-between md:justify-start px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40">
       <img
         src={logo24}
         alt="Logo com símbolo de código e camadas representando design"

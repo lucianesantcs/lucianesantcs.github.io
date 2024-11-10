@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="container min-h-dvh px-3 md:px-10 lg:px-20">
+      <main className="container max-w-144 mx-auto min-h-dvh px-3 md:px-10 lg:px-20">
         <Sobre />
       </main>
       <Footer />
