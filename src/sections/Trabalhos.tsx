@@ -1,5 +1,7 @@
 import imagemSkeleton from "@/assets/images/svg/imagemSkeleton.svg";
 import Button from "@/components/ui/Button";
+import Icon from "@/components/ui/Icon";
+import Link from "@/components/ui/Link";
 import { Circle, MoveDown, MoveUp } from "lucide-react";
 
 const Trabalhos = () => {
@@ -29,26 +31,15 @@ const Trabalhos = () => {
           </ul>
           <div className="flex justify-between items-end">
             <div className="flex flex-col gap-2">
-              <Button
-                label="Código"
-                showLabel={true}
-                showIcon={true}
-                iconName="ArrowUpRight"
-              />
-              <Button
-                label="Layout (Figma)"
-                showLabel={true}
-                showIcon={true}
-                iconName="ArrowUpRight"
-              />
+              <Link url="#" label="Código">
+                <Icon iconName="ArrowUpRight" />
+              </Link>
+              <Link url="#" label="Layout (Figma)">
+                <Icon iconName="ArrowUpRight" />
+              </Link>
             </div>
 
-            <Button
-              label="Visualizar mais projetos"
-              showLabel={true}
-              showIcon={true}
-              iconName="ArrowUpRight"
-            />
+            <Button label="Visualizar mais projetos" showLabel={true} />
           </div>
         </aside>
         <nav className="flex flex-col gap-2 justify-center">

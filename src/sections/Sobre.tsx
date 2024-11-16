@@ -1,4 +1,5 @@
 import SocialIcons from "@/components/ui/SocialIcons";
+import { socialIcons } from "@/shared/constants";
 
 const Sobre = () => {
   return (
@@ -6,10 +7,19 @@ const Sobre = () => {
       <section className="flex w-[32.75rem] mt-28 flex-col gap-8">
         <div>
           <h1 className="font-serif text-4xl font-medium">Luciane Santos</h1>
-          <h2 className="font-serif text-xl font-medium">Desenvolvedora Front-End</h2>
+          <h2 className="font-serif text-xl font-medium">
+            Desenvolvedora Front-End
+          </h2>
           <h2 className="font-serif text-base font-semibold">& UI Designer</h2>
         </div>
-        <SocialIcons showLabel={true} position="vertical" />
+        {socialIcons.map((socialIcon) => (
+          <SocialIcons
+            key={socialIcon.label}
+            label={socialIcon.label}
+            iconName={socialIcon.iconName}
+            url={socialIcon.url}
+          />
+        ))}
       </section>
 
       <section className="flex w-[33.6875rem] mt-28 flex-col gap-4">
