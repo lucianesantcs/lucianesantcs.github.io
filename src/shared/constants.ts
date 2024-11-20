@@ -8,17 +8,17 @@ export const socialIcons: SocialIconsProps[] = [
     },
     {
       label: "Github",
-      iconName: "ArrowUpRight",
+      iconName: "Github16",
       url: "https://github.com/lucianesantcs",
     },
     {
       label: "Linkedin",
-      iconName: "ArrowUpRight",
+      iconName: "Linkedin16",
       url: "https://www.linkedin.com/in/lucianesantcs",
     },
     {
       label: "Dribbble",
-      iconName: "ArrowUpRight",
+      iconName: "Dribbble16",
       url: "https://dribbble.com/lucianesantos",
     },
     {
