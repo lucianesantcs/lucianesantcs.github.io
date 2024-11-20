@@ -58,6 +58,7 @@ export default {
       maxWidth: {
         '144': '90rem',
         '458': '28.625rem',
+        '553': '34.5625rem',
       }
     },
   },

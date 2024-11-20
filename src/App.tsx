@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/layouts/Footer/Footer";
 import Header from "./components/layouts/Header/Header";
 import Experiencia from "./sections/Experiencia";
+import Feedbacks from "./sections/Feedbacks";
 import Sobre from "./sections/Sobre";
 import Trabalhos from "./sections/Trabalhos";
 
@@ -13,6 +14,7 @@ function App() {
         <Sobre />
         <Experiencia />
         <Trabalhos />
+        <Feedbacks />
       </main>
       <Footer />
     </>
