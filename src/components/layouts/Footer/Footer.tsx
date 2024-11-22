@@ -5,7 +5,7 @@ import { socialIcons } from "@/shared/constants";
 
 const Footer = () => {
   return (
-    <footer className="max-w-144 mx-auto flex w-full justify-between px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40 mt-12">
+    <footer className="max-w-144 mx-auto flex w-full justify-between px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40 mt-16">
       <div className="flex gap-3">
         {socialIcons.map((socialIcon) => (
           <SocialIcons

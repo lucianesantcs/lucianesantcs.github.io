@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./components/layouts/Footer/Footer";
 import Header from "./components/layouts/Header/Header";
+import Contato from "./sections/Contato";
 import Experiencia from "./sections/Experiencia";
 import Feedbacks from "./sections/Feedbacks";
 import Sobre from "./sections/Sobre";
@@ -15,6 +16,7 @@ function App() {
         <Experiencia />
         <Trabalhos />
         <Feedbacks />
+        <Contato />
       </main>
       <Footer />
     </>
