@@ -12,14 +12,16 @@ const Sobre = () => {
           </h2>
           <h2 className="font-serif text-base font-semibold">& UI Designer</h2>
         </div>
-        {socialIcons.map((socialIcon) => (
-          <SocialIcons
-            key={socialIcon.label}
-            label={socialIcon.label}
-            iconName={socialIcon.iconName}
-            url={socialIcon.url}
-          />
-        ))}
+        <div className="flex flex-col gap-3">
+          {socialIcons.map((socialIcon) => (
+            <SocialIcons
+              key={socialIcon.label}
+              label={socialIcon.label}
+              iconName={socialIcon.iconName}
+              url={socialIcon.url}
+            />
+          ))}
+        </div>
       </section>
 
       <section className="flex w-[33.6875rem] mt-28 flex-col gap-4">
