@@ -1,9 +1,15 @@
 import logo24 from "@/assets/images/svg/logo24.svg";
 import { Menu } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 
-const Header = () => {
+const Header = ({ className }: { className?: string }) => {
   return (
-    <header className=" max-w-144 mx-auto flex justify-between md:justify-start px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40">
+    <header
+      className={twMerge(
+        "max-w-144 mx-auto flex justify-between md:justify-start px-3 py-4 md:px-10 lg:px-20 md:gap-28 lg:gap-40",
+        className
+      )}
+    >
       <img
         src={logo24}
         alt="Logo com símbolo de código e camadas representando design"

@@ -1,9 +1,11 @@
-const Experiencia = () => {
+import { twMerge } from "tailwind-merge";
+
+const Experiencia = ({ className }: { className?: string }) => {
   return (
-    <section className="flex mt-20 flex-col gap-8">
+    <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
       <h2 className="font-serif text-2xl font-medium">Experiência</h2>
       <section className="flex justify-between">
-        <section className="w-[32.5625rem] flex flex-col gap-4">
+        <section className="w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h3 className="font-serif text-xl font-medium">
               Desenvolvedora FrontEnd @ somos ed
@@ -36,7 +38,7 @@ const Experiencia = () => {
           </div>
         </section>
 
-        <section className="w-[32.5625rem] flex flex-col gap-4">
+        <section className="w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h3 className="font-serif text-xl font-medium">
               Desenvolvedora FrontEnd

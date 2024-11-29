@@ -3,14 +3,15 @@ import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import Link from "@/components/ui/Link";
 import { Circle, MoveDown, MoveUp } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 
-const Trabalhos = () => {
+const Trabalhos = ({ className }: {className?: string }) => {
   return (
-    <section className="flex mt-20 flex-col gap-8">
+    <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
       <h2 className="font-serif text-2xl font-medium">Trabalhos</h2>
       <section className="flex gap-6">
         <img src={imagemSkeleton} style={{ width: 690 }} />
-        <aside className="flex gap-4 flex-col max-w-458">
+        <aside className="flex gap-6 flex-col max-w-458">
           <h3 className="font-serif text-xl leading-6 font-medium">
             Site profissional 1.0
           </h3>

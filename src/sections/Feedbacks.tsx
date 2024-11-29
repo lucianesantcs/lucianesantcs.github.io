@@ -1,7 +1,8 @@
 import Button from "@/components/ui/Button";
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
-const Feedbacks = () => {
+const Feedbacks = ({ className }: { className?: string }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const descricao = `Tive a oportunidade de trabalhar com a Luciane em vários projetos na
@@ -24,7 +25,7 @@ const Feedbacks = () => {
   const handleLerMais = () => setIsExpanded(!isExpanded);
 
   return (
-    <section className="flex flex-col justify-center w-full gap-6 mt-28">
+    <section className={twMerge("flex flex-col justify-center w-full gap-8 mt-28", className)}>
       <h2 className="font-serif text-2xl font-medium text-center">Feedbacks</h2>
       <div className="flex flex-col">
         <h3 className="font-serif text-xl leading-6 font-medium text-center">
@@ -34,7 +35,7 @@ const Feedbacks = () => {
           Product Designer | UX/UI Designer
         </p>
       </div>
-      <div className="flex flex-col gap-4 item-start max-w-553 mx-auto">
+      <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
         <p className="font-sans text-base">
           {isExpanded ? descricao : descricaoTruncada}
         </p>
