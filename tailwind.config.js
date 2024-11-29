@@ -4,7 +4,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      sans: ["Work Sans", "sans-serif"],
       serif: ["IBM Plex Sans", "serif"],
     },
     extend: {
