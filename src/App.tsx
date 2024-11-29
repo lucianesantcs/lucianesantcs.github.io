@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header className="mb-28" />
-      <main className="container max-w-144 mx-auto flex flex-col gap-28 min-h-dvh px-3 md:px-10 lg:px-20">
+      <main className="container max-w-144 mx-auto flex flex-col gap-14 min-h-dvh px-3 md:px-10 lg:px-20">
         <Sobre className="py-20 items-center" />
         <Experiencia className="py-20" />
         <Trabalhos className="py-20" />
