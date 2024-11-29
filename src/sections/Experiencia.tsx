@@ -1,15 +1,15 @@
+import Subtitle from "@/components/ui/Subtitle";
+import Title from "@/components/ui/Title";
 import { twMerge } from "tailwind-merge";
 
 const Experiencia = ({ className }: { className?: string }) => {
   return (
     <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
-      <h2 className="font-serif text-2xl font-medium">Experiência</h2>
+      <Title>Experiência</Title>
       <section className="flex justify-between">
         <section className="w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h3 className="font-serif text-xl font-medium">
-              Desenvolvedora FrontEnd @ somos ed
-            </h3>
+            <Subtitle showDivider={false}>Desenvolvedora FrontEnd @ somos ed</Subtitle>
             <div>
               <p className="font-serif text-sm font-semibold">
                 Rio de Janeiro, Brasil (Remoto)
@@ -25,10 +25,8 @@ const Experiencia = ({ className }: { className?: string }) => {
             de testes automatizados E2E com Playwright em Typescript, seguindo o
             padrão Page Object Model.
           </p>
-          <div className="flex flex-col gap-2">
-            <h4 className="font-serif text-xs font-semibold">
-              Skills e tecnologias
-            </h4>
+          <div className="flex flex-col gap-4">
+            <Subtitle className="text-xs" type="h3">Skills e tecnologias</Subtitle>
             <p className="font-sans text-sm">
               HTML5 › CSS › SASS › Frontend Development › Figma › Google
               Analytics › Web Design Responsivo › Desenvolvimento Web ›
@@ -40,9 +38,7 @@ const Experiencia = ({ className }: { className?: string }) => {
 
         <section className="w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h3 className="font-serif text-xl font-medium">
-              Desenvolvedora FrontEnd
-            </h3>
+            <Subtitle showDivider={false}>Desenvolvedora FrontEnd</Subtitle>
             <div>
               <p className="font-serif text-sm font-semibold">
                 Belo Horizonte, Brasil
@@ -56,10 +52,8 @@ const Experiencia = ({ className }: { className?: string }) => {
             JavaScript, além de frameworks como Angular e React. Criação de
             interfaces utilizando o Figma.
           </p>
-          <div className="flex flex-col gap-2">
-            <h4 className="font-serif text-xs font-semibold">
-              Skills e tecnologias
-            </h4>
+          <div className="flex flex-col gap-4">
+            <Subtitle className="text-xs" type="h3">Skills e tecnologias</Subtitle>
             <p className="font-sans text-sm">
               HTML5 › CSS › SASS › Figma › Adobe Photoshop › Illustrator ›
               Design de Interfaces › Web Design Responsivo › JavaScript ›

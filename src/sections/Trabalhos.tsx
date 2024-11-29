@@ -2,13 +2,14 @@ import imagemSkeleton from "@/assets/images/svg/imagemSkeleton.svg";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import Link from "@/components/ui/Link";
+import Title from "@/components/ui/Title";
 import { Circle, MoveDown, MoveUp } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 const Trabalhos = ({ className }: {className?: string }) => {
   return (
     <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
-      <h2 className="font-serif text-2xl font-medium">Trabalhos</h2>
+      <Title>Trabalhos</Title>
       <section className="flex gap-6">
         <img src={imagemSkeleton} style={{ width: 690 }} />
         <aside className="flex gap-6 flex-col max-w-458">

@@ -1,4 +1,5 @@
 import SocialIcons from "@/components/ui/SocialIcons";
+import Title from "@/components/ui/Title";
 import { socialIcons } from "@/shared/constants";
 import { twMerge } from "tailwind-merge";
 
@@ -26,7 +27,7 @@ const Sobre = ({ className }: { className?: string }) => {
       </section>
 
       <section className="flex w-[33.6875rem] flex-col gap-8">
-        <h2 className="font-serif text-2xl font-medium">Sobre</h2>
+        <Title>Sobre</Title>
         <p className="font-sans text-base">
           Profissional Front-End com mais de três anos de experiência em
           desenvolvimento web dominando as linguagens HTML, CSS/Sass, JavaScript

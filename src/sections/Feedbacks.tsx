@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import Title from "@/components/ui/Title";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -25,8 +26,8 @@ const Feedbacks = ({ className }: { className?: string }) => {
   const handleLerMais = () => setIsExpanded(!isExpanded);
 
   return (
-    <section className={twMerge("flex flex-col justify-center w-full gap-8 mt-28", className)}>
-      <h2 className="font-serif text-2xl font-medium text-center">Feedbacks</h2>
+    <section className={twMerge("flex flex-col w-full gap-8 mt-28", className)}>
+      <Title align="justify-center">Feedbacks</Title>
       <div className="flex flex-col">
         <h3 className="font-serif text-xl leading-6 font-medium text-center">
           Gabriel Tavares
