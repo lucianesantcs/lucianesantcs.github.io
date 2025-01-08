@@ -5,7 +5,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Work Sans", "sans-serif"],
-      serif: ["IBM Plex Sans", "serif"],
+      serif: ["Bricolage Grotesque", "serif"],
     },
     extend: {
       borderRadius: {
