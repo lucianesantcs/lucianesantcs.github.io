@@ -6,7 +6,7 @@ const Header = ({ className }: { className?: string }) => {
   return (
     <header
       className={twMerge(
-        "max-w-144 mx-auto flex justify-between md:justify-start px-3 py-10 md:px-10 lg:px-20 md:gap-28 lg:gap-40",
+        "max-w-144 mx-auto flex justify-between md:justify-start px-3 py-10 md:px-10 lg:px-20 md:gap-14 lg:gap-40",
         className
       )}
     >
@@ -21,7 +21,7 @@ const Header = ({ className }: { className?: string }) => {
         <a href="#feedbacks">Feedbacks</a>
         <a href="#contato">Contato</a>
       </nav>
-      <button className="lg:hidden">
+      <button className="md:hidden">
         <Menu color="#e5e5e5" size={16} />
       </button>
     </header>
