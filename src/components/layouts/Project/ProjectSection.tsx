@@ -30,7 +30,7 @@ const ProjectSection = () => {
           <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out">
             {currentProject.title}
           </h3>
-          <p className="font-sans text-base md:max-w-10 lg:max-w-540 transition-all duration-300 ease-in-out">
+          <p className="font-sans text-base lg:max-w-540 transition-all duration-300 ease-in-out">
             {currentProject.description}
           </p>
           <ul className="flex gap-3 max-w-56 flex-wrap transition-all duration-300 ease-in-out">
