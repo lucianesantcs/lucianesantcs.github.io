@@ -10,13 +10,13 @@ const Trabalhos = ({ className }: { className?: string }) => {
   return (
     <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
       <Title>Trabalhos</Title>
-      <section className="flex flex-col lg:flex-row gap-6">
+      <section className="flex flex-col xl:flex-row gap-6">
         <img src={imagemSkeleton} className="lg:w-690 h-auto" />
-        <aside className="flex gap-6 flex-col order-2 lg:order-1 lg:max-w-458">
+        <aside className="flex gap-6 flex-col order-2 xl:order-1 xl:max-w-458">
           <h3 className="font-serif text-xl leading-6 font-medium">
             Site profissional 1.0
           </h3>
-          <p className="font-sans text-base">
+          <p className="font-sans text-base lg:max-w-540">
             Site pessoal desenvolvido com Angular 17. O design criado utilizando
             Figma; tipografia baseada no Material Design; ilustrações do site
             Storyset; ícones do Lucide Icons; utilizado tints.dev para criação
@@ -41,11 +41,11 @@ const Trabalhos = ({ className }: { className?: string }) => {
               </Link>
             </div>
 
-            <Button className="hidden lg:flex" label="Visualizar mais projetos" showLabel={true} />
+            <Button className="hidden xl:flex" label="Visualizar mais projetos" showLabel={true} />
           </div>
         </aside>
-        <nav className="flex lg:flex-col gap-2 justify-between lg:justify-center sm:order-1 lg:order-2">
-          <div className="flex lg:flex-col gap-2">
+        <nav className="flex xl:flex-col gap-2 justify-between xl:justify-center sm:order-1 xl:order-2">
+          <div className="flex xl:flex-col gap-2">
             <MoveUp color="#e5e5e5" size={16} />
             <a href="">
               <Circle color="#e5e5e5" size={16} />
@@ -62,7 +62,7 @@ const Trabalhos = ({ className }: { className?: string }) => {
             <MoveDown color="#e5e5e5" size={16} />
           </div>
 
-          <Button className="lg:hidden" label="Visualizar mais projetos" showLabel={true} />
+          <Button className="xl:hidden" label="Visualizar mais projetos" showLabel={true} />
         </nav>
       </section>
     </section>
