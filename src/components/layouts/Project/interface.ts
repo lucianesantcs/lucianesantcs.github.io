@@ -3,6 +3,12 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  codeUrl: string;
-  figmaUrl: string;
+  primaryButton?: {
+    url: string;
+    label: string;
+  };
+  secondaryButton?: {
+    url: string;
+    label: string;
+  };
 }

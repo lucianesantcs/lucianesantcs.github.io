@@ -1,4 +1,3 @@
-import imagemSkeleton from "@/assets/images/svg/imagemSkeleton.svg";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import Link from "@/components/ui/Link";
@@ -22,10 +21,10 @@ const ProjectSection = () => {
   return (
     <section className="flex flex-col xl:flex-row gap-6">
       <img
-        src={imagemSkeleton}
-        className="lg:w-690 h-auto transition-opacity duration-300"
+        src={currentProject.image}
+        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded-md"
       />
-      <aside className="flex gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
+      <aside className="w-full flex gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
         <div className="flex flex-col gap-6">
           <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out">
             {currentProject.title}
@@ -46,20 +45,24 @@ const ProjectSection = () => {
         </div>
         <div className="flex justify-between items-end">
           <div className="flex flex-col gap-2">
-            <Link
-              url={currentProject.codeUrl}
-              label="Código"
-              className="transition-all duration-300 ease-in-out"
-            >
-              <Icon iconName="ArrowUpRight" />
-            </Link>
-            <Link
-              url={currentProject.figmaUrl}
-              label="Layout (Figma)"
-              className="transition-all duration-300 ease-in-out"
-            >
-              <Icon iconName="ArrowUpRight" />
-            </Link>
+            {currentProject?.primaryButton?.label && (
+              <Link
+                url={currentProject.primaryButton.url}
+                label={currentProject.primaryButton.label}
+                className="transition-all duration-300 ease-in-out"
+              >
+                <Icon iconName="ArrowUpRight" />
+              </Link>
+            )}
+            {currentProject?.secondaryButton?.label && (
+              <Link
+                url={currentProject.secondaryButton.url}
+                label={currentProject.secondaryButton.label}
+                className="transition-all duration-300 ease-in-out"
+              >
+                <Icon iconName="ArrowUpRight" />
+              </Link>
+            )}
           </div>
 
           <Button
