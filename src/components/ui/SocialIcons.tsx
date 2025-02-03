@@ -19,7 +19,7 @@ const SocialIcons = ({ label, url, iconName = "ArrowUpRight", showLabel = true, 
       showLabel={showLabel}
       url={url}
       label={label}
-      className={`font-serif text-xs font-semibold uppercase ${setPosition}`}
+      className={`font-serif text-sm font-semibold lowercase ${setPosition}`}
     >
       <Icon iconName={iconName} />
       {showExternalLinkIcon && <Icon iconName="ArrowUpRight" />}
