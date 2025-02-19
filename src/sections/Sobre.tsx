@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 const Sobre = ({ className }: { className?: string }) => {
   return (
     <section className={twMerge("flex flex-col lg:flex-row", className)}>
-      <section className="w-full lg:w-[32.75rem] flex lg:flex-col justify-between gap-8">
+      <section className="flex flex-col justify-between gap-8 w-full lg:w-[32.75rem]">
         <div>
           <h1 className="font-serif text-4xl font-medium">Luciane Santos</h1>
           <h2 className="font-serif text-xl font-medium">

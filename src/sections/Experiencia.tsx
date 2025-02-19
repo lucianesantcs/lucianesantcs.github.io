@@ -6,7 +6,7 @@ const Experiencia = ({ className }: { className?: string }) => {
   return (
     <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
       <Title>Experiência</Title>
-      <section className="flex flex-col lg:flex-row justify-between lg:gap-8 sm:gap-16">
+      <section className="flex flex-col lg:flex-row justify-between gap-16 md:gap-8">
         <section className="w-full lg:w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false}>Desenvolvedora FrontEnd @ somos ed</Subtitle>

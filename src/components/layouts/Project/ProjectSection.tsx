@@ -32,7 +32,7 @@ const ProjectSection = () => {
           <p className="font-sans text-base lg:max-w-540 transition-all duration-300 ease-in-out">
             {currentProject.description}
           </p>
-          <ul className="flex gap-3 max-w-56 flex-wrap transition-all duration-300 ease-in-out">
+          <ul className="flex gap-3 md:max-w-56 flex-wrap transition-all duration-300 ease-in-out">
             {currentProject.tags.map((tag, index) => (
               <li
                 key={index}
