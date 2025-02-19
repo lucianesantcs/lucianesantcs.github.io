@@ -16,7 +16,7 @@ const Link = ({
   children,
 }: LinkProps) => {
   const childrenArray = React.Children?.toArray(children);
-  const baseStyles = "flex gap-3 font-serif text-xs font-semibold";
+  const baseStyles = "flex gap-3 font-serif text-sm font-semibold";
   const linkStyles = `${baseStyles} ${className}`.trim();
 
   return (

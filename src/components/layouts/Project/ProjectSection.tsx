@@ -22,9 +22,9 @@ const ProjectSection = () => {
     <section className="flex flex-col xl:flex-row gap-6">
       <img
         src={currentProject.image}
-        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded-md"
+        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded"
       />
-      <aside className="w-full flex gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
+      <aside className="w-full flex gap-8 lg:gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
         <div className="flex flex-col gap-6">
           <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out">
             {currentProject.title}
@@ -32,13 +32,13 @@ const ProjectSection = () => {
           <p className="font-sans text-base lg:max-w-540 transition-all duration-300 ease-in-out">
             {currentProject.description}
           </p>
-          <ul className="flex gap-3 md:max-w-56 flex-wrap transition-all duration-300 ease-in-out">
+          <ul className="flex gap-3 lg:max-w-72 flex-wrap transition-all duration-300 ease-in-out">
             {currentProject.tags.map((tag, index) => (
               <li
                 key={index}
-                className="transition-all duration-300 ease-in-out"
+                className="bg-zinc-900 border p-1 rounded transition-all duration-300 ease-in-out"
               >
-                #{tag}
+                {tag}
               </li>
             ))}
           </ul>
