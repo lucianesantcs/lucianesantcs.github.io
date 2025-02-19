@@ -8,6 +8,11 @@ export default {
       serif: ["Bricolage Grotesque", "serif"],
     },
     extend: {
+      content: {
+        circleDrawing: 'url("../src/assets/images/svg/drawings/circle.svg")',
+        straightArrow: 'url("../src/assets/images/svg/drawings/straight-arrow.svg")',
+        line: 'url("../src/assets/images/svg/drawings/line.svg")',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -56,11 +61,14 @@ export default {
         },
       },
       maxWidth: {
-        '144': '90rem',
-        '458': '28.625rem',
-        '632': '39.5rem',
-        '540': '33.75rem'
-      }
+        144: "90rem",
+        458: "28.625rem",
+        632: "39.5rem",
+        540: "33.75rem",
+      },
+      spacing: {
+        "custom-negative-10": "-24px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -9,7 +9,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "host": "npm run dev -- --host"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",

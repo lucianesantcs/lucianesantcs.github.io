@@ -32,6 +32,10 @@ img {
   padding: 0;
 }
 
+@theme {
+  --spacing: 4px; 
+}
+
 @layer base {
   :root {
     --background: 240 10% 3.9%;
