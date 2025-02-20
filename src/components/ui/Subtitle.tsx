@@ -19,7 +19,7 @@ const Subtitle = ({
   return (
     <div className="flex flex-col gap-2">
       <Component
-        className={twMerge("font-medium text- font-serif", fontSize, className)}
+        className={twMerge("font-medium font-serif", fontSize, className)}
       >
         {children}
       </Component>

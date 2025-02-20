@@ -25,8 +25,8 @@ const ProjectSection = () => {
         className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded"
       />
       <aside className="w-full flex gap-8 lg:gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
-        <div className="flex flex-col gap-6">
-          <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out">
+        <div className="flex flex-col gap-6 relative">
+          <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out after:content-line after:absolute after:left-2 after:top-4">
             {currentProject.title}
           </h3>
           <p className="font-sans text-base lg:max-w-540 transition-all duration-300 ease-in-out">

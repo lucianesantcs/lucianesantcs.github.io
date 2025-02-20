@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -28,13 +29,16 @@ const Feedbacks = ({ className }: { className?: string }) => {
   return (
     <section className={twMerge("flex flex-col w-full gap-8 mt-28", className)}>
       <Title align="justify-center">Feedbacks</Title>
-      <div className="flex flex-col">
-        <h3 className="font-serif text-xl leading-6 font-medium text-center">
+      <div className="flex flex-col w-auto text-center">
+        <Subtitle showDivider={false} className="relative grid place-items-center">
           Gabriel Tavares
-        </h3>
-        <p className="font-sans text-base text-center">
-          Product Designer | UX/UI Designer
-        </p>
+          <p className="font-sans text-base relative w-auto">
+            Product Designer |{" "}
+            <span className="after:content-line after:absolute after:left-36 after:top-4">
+              UX/UI Designer
+            </span>
+          </p>
+        </Subtitle>
       </div>
       <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
         <p className="font-sans text-base">

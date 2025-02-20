@@ -9,7 +9,12 @@ const Experiencia = ({ className }: { className?: string }) => {
       <section className="flex flex-col lg:flex-row justify-between gap-16 md:gap-8">
         <section className="w-full lg:w-[32.5625rem] flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <Subtitle showDivider={false}>Desenvolvedora FrontEnd @ somos ed</Subtitle>
+            <Subtitle showDivider={false} className="relative">
+              Desenvolvedora FrontEnd @{" "}
+              <span className="after:content-line after:absolute after:left-60 after:top-4">
+                somos ed
+              </span>{" "}
+            </Subtitle>
             <div>
               <p className="font-serif text-sm font-semibold">
                 Rio de Janeiro, Brasil (Remoto)
@@ -26,7 +31,9 @@ const Experiencia = ({ className }: { className?: string }) => {
             padrão Page Object Model.
           </p>
           <div className="flex flex-col gap-4">
-            <Subtitle className="text-xs" type="h3">Skills e tecnologias</Subtitle>
+            <Subtitle className="text-xs" type="h3">
+              Skills e tecnologias
+            </Subtitle>
             <p className="font-sans text-sm">
               HTML5 › CSS › SASS › Frontend Development › Figma › Google
               Analytics › Web Design Responsivo › Desenvolvimento Web ›
@@ -53,7 +60,9 @@ const Experiencia = ({ className }: { className?: string }) => {
             interfaces utilizando o Figma.
           </p>
           <div className="flex flex-col gap-4">
-            <Subtitle className="text-xs" type="h3">Skills e tecnologias</Subtitle>
+            <Subtitle className="text-xs" type="h3">
+              Skills e tecnologias
+            </Subtitle>
             <p className="font-sans text-sm">
               HTML5 › CSS › SASS › Figma › Adobe Photoshop › Illustrator ›
               Design de Interfaces › Web Design Responsivo › JavaScript ›
