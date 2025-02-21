@@ -68,6 +68,7 @@ export default {
       },
       spacing: {
         "custom-negative-10": "-24px",
+        "custom-10": "5rem",
       },
     },
   },
