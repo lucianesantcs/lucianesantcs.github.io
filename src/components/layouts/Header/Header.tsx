@@ -14,7 +14,7 @@ const Header = ({ className }: { className?: string }) => {
 
   function setNavClasses(nav: boolean) {
     if (nav) {
-      return "flex flex-col gap-5 absolute bg-zinc-900 p-4 rounded w-5/6 box-border top-custom-10 right-3 z-10";
+      return "flex flex-col gap-5 absolute text-zinc-950 bg-zinc-50 p-4 rounded w-5/6 box-border top-custom-10 right-5 z-10";
     } else if (smBreakPoint) {
       return "hidden";
     }
