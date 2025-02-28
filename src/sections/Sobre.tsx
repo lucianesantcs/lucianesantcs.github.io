@@ -37,8 +37,9 @@ const Sobre = ({ className }: { className?: string }) => {
             três anos
           </span>{" "}
           de experiência em desenvolvimento web dominando as linguagens HTML,
-          CSS/Sass, JavaScript e TypeScript. Criação de layouts utilizando o Angular
-          e biblioteca ReactJS. Conhecimento de User Interface/User Experience
+          CSS/Sass, JavaScript e TypeScript. Atualmente cursando graduação de Análise e Desenvolvimento de Sistemas. 
+          Atuo na criação de layouts utilizando o Angular
+          e biblioteca ReactJS. Possuo conhecimento de User Interface/User Experience
           para o design de interfaces utilizando a ferramenta Figma.
         </p>
       </section>
