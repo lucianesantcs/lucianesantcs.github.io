@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+![image](https://lucianesantcs.github.io/assets/site-atual-full-C7BkqvgD.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :art: Design e Resources:
+- [Link do figma](https://www.figma.com/design/6gDG8RvO69NgvcCSluzW45/projetos-%2F-site-v.02?node-id=716-3286&t=tNZWogXF2Fpefw2I-1)
 
-Currently, two official plugins are available:
+:mag_right: Plugins Figma:
+- [Foundation Color Generator](https://www.figma.com/community/plugin/1024452006068794933/foundation-color-generator)
+- [Contrast](https://www.figma.com/community/plugin/748533339900865323/contrast)
+- [Golden Line Height](https://www.figma.com/community/plugin/1203442582691456980/golden-line-height)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+:bulb: Resources:
+- [Ícones](https://lucide.dev/icons/archive) 
+- [Resources do eFront](https://iuricode.com/efront/)
+- [Tipogradia MD](https://m2.material.io/design/typography/the-type-system.html#type-scale)
+- [Paleta de cores - Zinc TailwindCSS](https://tailwindcss.com/docs/colors)
+- [Playlist UI Design](https://www.youtube.com/playlist?list=PLNsOFKwcEPxzvqDJcWEGswBEM_zD5RaXr)
 
-## Expanding the ESLint configuration
+<br />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## :telephone_receiver: Contato
 
-- Configure the top-level `parserOptions` property like this:
+- Email: lucianesantcs@gmail.com
+- GitHub: [@lucianesantcs](https://github.com/lucianesantcs)
+- LinkedIn: [@lucianesantcs](https://linkedin.com/in/lucianesantcs)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<br />
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📝 Licença
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<a href="https://github.com/lucianesantcs/site-pessoal/blob/master/LICENSE">MIT License</a> © 2025 Luciane Santos
