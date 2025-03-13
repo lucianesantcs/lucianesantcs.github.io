@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { useMediaQuery } from "usehooks-ts";
 
 const Header = ({ className }: { className?: string }) => {
-  const smBreakPoint = useMediaQuery("(max-width: 640px)");
+  const smBreakPoint = useMediaQuery("(max-width: 767px)");
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -15,30 +15,27 @@ const Header = ({ className }: { className?: string }) => {
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (nav) {
       setNav(false);
+    }
 
-      const targetId = event.currentTarget
-        .getAttribute("href")
-        ?.replace("#", "");
+    const targetId = event.currentTarget.getAttribute("href")?.replace("#", "");
 
-      if (targetId) {
-        const targetElement = document.getElementById(targetId);
+    if (targetId) {
+      const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-          const headerHeight =
-            document.querySelector("header")?.offsetHeight ?? 0;
+      if (targetElement) {
+        const headerHeight =
+          document.querySelector("header")?.offsetHeight ?? 0;
 
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerHeight - 20; // 20px extra padding
 
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition =
-            elementPosition + window.pageYOffset - headerHeight - 20; // 20px extra padding
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
-
-          window.history.pushState({}, "", `#${targetId}`);
-        }
+        window.history.pushState({}, "", `#${targetId}`);
       }
     }
   };
