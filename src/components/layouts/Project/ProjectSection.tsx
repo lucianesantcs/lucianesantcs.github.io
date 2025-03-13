@@ -108,6 +108,7 @@ const ProjectSection = () => {
         </div>
 
         <Button
+          disabled={true}
           className="xl:hidden"
           label="Visualizar mais projetos"
           showLabel={true}

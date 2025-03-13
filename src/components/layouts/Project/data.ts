@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "pessoal",
     ],
     primaryButton: {
-      url: "https://github.com/lucianesantcs/lucianesantos",
+      url: "https://github.com/lucianesantcs/lucianesantcs.github.io",
       label: "Código",
     },
     secondaryButton: {
