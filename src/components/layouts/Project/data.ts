@@ -1,10 +1,37 @@
 import { Project } from "./interface";
 import siteFull from "@/assets/images/projects/site-full.png";
+import siteAtualFull from "@/assets/images/projects/site-atual-full.png";
 import buyItFull from "@/assets/images/projects/buy-it-full.png";
 import blogCardsFull from "@/assets/images/projects/blog-cards-full.png";
 import dekan from "@/assets/images/projects/dekan-landing-page.png";
 
 export const projects: Project[] = [
+  {
+    image: siteAtualFull,
+    title: "Site Pessoal - React 18",
+    description: `Site pessoal utilizado atualmente que foi desenvolvido com React 18 e TypeScript, utilizando Tailwind CSS 
+      para estilização, paleta de cores, responsividade e muito mais. Os ícones são da biblioteca Lucide Icons e o design criado 
+      no Figma focando em uma interface moderna e minimalista seguindo o sistema de 8pt grid para garantir consistência visual 
+      e uma experiência intuitiva.`,
+    tags: [
+      "reactjs",
+      "typescript",
+      "tailwindcss",
+      "figma",
+      "design",
+      "uiux",
+      "webdevelopment",
+      "pessoal",
+    ],
+    primaryButton: {
+      url: "https://github.com/lucianesantcs/lucianesantos",
+      label: "Código",
+    },
+    secondaryButton: {
+      url: "https://www.figma.com/design/6gDG8RvO69NgvcCSluzW45/projetos-%2F-site-v.02?node-id=716-3286&t=tNZWogXF2Fpefw2I-1",
+      label: "Layout (Figma)",
+    },
+  },
   {
     image: siteFull,
     title: "Site Pessoal - Angular 17",

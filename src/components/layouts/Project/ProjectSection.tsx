@@ -22,7 +22,7 @@ const ProjectSection = () => {
     <section className="flex flex-col xl:flex-row gap-6">
       <img
         src={currentProject.image}
-        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded"
+        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded border border-zinc-800"
       />
       <aside className="w-full flex gap-8 lg:gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
         <div className="flex flex-col gap-6 relative">
