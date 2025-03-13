@@ -27,4 +27,4 @@
 
 ## 📝 Licença
 
-<a href="https://github.com/lucianesantcs/site-pessoal/blob/master/LICENSE">MIT License</a> © 2025 Luciane Santos
+<a href="https://github.com/lucianesantcs/lucianesantcs.github.io/blob/main/LICENSE">MIT License</a> © 2025 Luciane Santos
