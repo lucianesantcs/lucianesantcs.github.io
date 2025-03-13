@@ -66,6 +66,7 @@ const ProjectSection = () => {
           </div>
 
           <Button
+            disabled={true}
             className="hidden xl:flex"
             label="Visualizar mais projetos"
             showLabel={true}
