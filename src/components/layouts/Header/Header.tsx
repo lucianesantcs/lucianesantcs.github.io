@@ -28,7 +28,7 @@ const Header = ({ className }: { className?: string }) => {
 
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition =
-          elementPosition + window.pageYOffset - headerHeight - 20; // 20px extra padding
+          elementPosition + window.pageYOffset - headerHeight - 20;
 
         window.scrollTo({
           top: offsetPosition,
