@@ -12,11 +12,11 @@ function App() {
     <>
       <Header className="md:mb-28" />
       <main className="container max-w-144 mx-auto flex flex-col gap-14 min-h-dvh px-3 md:px-10 lg:px-20">
-        <Sobre className="py-6 md:py-8 lg:py-20 items-center gap-8" />
-        <Experiencia className="py-6 md:py-8 lg:py-20" />
-        <Trabalhos className="py-6 md:py-8 lg:py-20" />
-        <Feedbacks className="py-6 md:py-8 lg:py-20" />
-        <Contato className="py-6 md:py-8 lg:py-20" />
+        <Sobre id="sobre" className="py-6 md:py-8 lg:py-20 items-center gap-8" />
+        <Experiencia id="experiencia" className="py-6 md:py-8 lg:py-20" />
+        <Trabalhos id="trabalhos" className="py-6 md:py-8 lg:py-20" />
+        <Feedbacks id="feedbacks" className="py-6 md:py-8 lg:py-20" />
+        <Contato id="contato" className="py-6 md:py-8 lg:py-20" />
       </main>
       <Footer />
     </>

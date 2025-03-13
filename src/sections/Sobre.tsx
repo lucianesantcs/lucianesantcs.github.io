@@ -3,9 +3,17 @@ import Title from "@/components/ui/Title";
 import { socialIcons } from "@/shared/constants";
 import { twMerge } from "tailwind-merge";
 
-const Sobre = ({ className }: { className?: string }) => {
+interface SobreProps {
+  className?: string;
+  id: string;
+}
+
+const Sobre = ({ className, id }: SobreProps) => {
   return (
-    <section className={twMerge("flex flex-col lg:flex-row", className)}>
+    <section
+      id={id}
+      className={twMerge("flex flex-col lg:flex-row", className)}
+    >
       <section className="flex flex-col justify-between gap-8 w-full lg:w-[32.75rem]">
         <div>
           <h1 className="font-serif text-4xl font-medium">Luciane Santos</h1>
@@ -37,10 +45,11 @@ const Sobre = ({ className }: { className?: string }) => {
             três anos
           </span>{" "}
           de experiência em desenvolvimento web dominando as linguagens HTML,
-          CSS/Sass, JavaScript e TypeScript. Atualmente cursando graduação de Análise e Desenvolvimento de Sistemas. 
-          Atuo na criação de layouts utilizando o Angular
-          e biblioteca ReactJS. Possuo conhecimento de User Interface/User Experience
-          para o design de interfaces utilizando a ferramenta Figma.
+          CSS/Sass, JavaScript e TypeScript. Atualmente cursando graduação de
+          Análise e Desenvolvimento de Sistemas. Atuo na criação de layouts
+          utilizando o Angular e biblioteca ReactJS. Possuo conhecimento de User
+          Interface/User Experience para o design de interfaces utilizando a
+          ferramenta Figma.
         </p>
       </section>
     </section>

@@ -12,6 +12,37 @@ const Header = ({ className }: { className?: string }) => {
     setNav(!nav);
   };
 
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (nav) {
+      setNav(false);
+
+      const targetId = event.currentTarget
+        .getAttribute("href")
+        ?.replace("#", "");
+
+      if (targetId) {
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const headerHeight =
+            document.querySelector("header")?.offsetHeight ?? 0;
+
+
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerHeight - 20; // 20px extra padding
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+
+          window.history.pushState({}, "", `#${targetId}`);
+        }
+      }
+    }
+  };
+
   function setNavClasses(nav: boolean) {
     if (nav) {
       return "flex flex-col gap-5 absolute text-zinc-950 bg-zinc-50 p-4 rounded w-5/6 box-border top-custom-10 right-5 z-10";
@@ -35,16 +66,23 @@ const Header = ({ className }: { className?: string }) => {
         alt="Logo com símbolo de código e camadas representando design"
       />
       <nav className={twMerge(`${navClasses} md:flex-row md:gap-16`)}>
-        <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#trabalhos">Trabalhos</a>
-        <a href="#feedbacks">Feedbacks</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre" onClick={(event) => handleScroll(event)}>
+          Sobre
+        </a>
+        <a href="#experiencia" onClick={(event) => handleScroll(event)}>
+          Experiência
+        </a>
+        <a href="#trabalhos" onClick={(event) => handleScroll(event)}>
+          Trabalhos
+        </a>
+        <a href="#feedbacks" onClick={(event) => handleScroll(event)}>
+          Feedbacks
+        </a>
+        <a href="#contato" onClick={(event) => handleScroll(event)}>
+          Contato
+        </a>
       </nav>
-      <button
-        className="block md:hidden p-2 relative"
-        onClick={handleNav}
-      >
+      <button className="block md:hidden p-2 relative" onClick={handleNav}>
         {nav ? (
           <X color="#e5e5e5" size={16} />
         ) : (

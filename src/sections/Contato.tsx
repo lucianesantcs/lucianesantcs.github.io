@@ -2,13 +2,21 @@ import SocialIcons from "@/components/ui/SocialIcons";
 import Title from "@/components/ui/Title";
 import { socialIcons } from "@/shared/constants";
 import { twMerge } from "tailwind-merge";
-import { useMediaQuery } from 'usehooks-ts'
+import { useMediaQuery } from "usehooks-ts";
 
-const Contato = ({ className }: { className?: string }) => {
-  const lgBreakPoint = useMediaQuery('(min-width: 1024px)');
+interface ContatoProps {
+  className?: string;
+  id: string;
+}
+
+const Contato = ({ className, id }: ContatoProps) => {
+  const lgBreakPoint = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section className={twMerge("flex flex-col w-full gap-6 mt-28", className)}>
+    <section
+      id={id}
+      className={twMerge("flex flex-col w-full gap-6 mt-28", className)}
+    >
       <Title>Entre em contato</Title>
       <section className="flex flex-col lg:flex-row gap-4 lg:gap-56">
         <section className="max-w-632">
@@ -29,7 +37,7 @@ const Contato = ({ className }: { className?: string }) => {
           {socialIcons.map((socialIcon) => (
             <SocialIcons
               key={socialIcon.label}
-              label={lgBreakPoint ? socialIcon.label : ''}
+              label={lgBreakPoint ? socialIcon.label : ""}
               iconName={socialIcon.iconName}
               url={socialIcon.url}
               showExternalLinkIcon={lgBreakPoint ?? true}

@@ -2,9 +2,17 @@ import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { twMerge } from "tailwind-merge";
 
-const Experiencia = ({ className }: { className?: string }) => {
+interface ExperienciaProps {
+  className?: string;
+  id: string;
+}
+
+const Experiencia = ({ className, id }: ExperienciaProps) => {
   return (
-    <section className={twMerge("flex mt-20 flex-col gap-8", className)}>
+    <section
+      id={id}
+      className={twMerge("flex mt-20 flex-col gap-8", className)}
+    >
       <Title>Experiência</Title>
       <section className="flex flex-col lg:flex-row justify-between gap-16 md:gap-8">
         <section className="w-full lg:w-[32.5625rem] flex flex-col gap-8">

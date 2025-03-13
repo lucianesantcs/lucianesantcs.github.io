@@ -4,7 +4,12 @@ import Title from "@/components/ui/Title";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const Feedbacks = ({ className }: { className?: string }) => {
+interface FeedbacksProps {
+  className?: string;
+  id: string;
+}
+
+const Feedbacks = ({ className, id }: FeedbacksProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const descricao = `Tive a oportunidade de trabalhar com a Luciane em vários projetos na
@@ -27,10 +32,16 @@ const Feedbacks = ({ className }: { className?: string }) => {
   const handleLerMais = () => setIsExpanded(!isExpanded);
 
   return (
-    <section className={twMerge("flex flex-col w-full gap-8 mt-28", className)}>
+    <section
+      id={id}
+      className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
+    >
       <Title align="justify-center">Feedbacks</Title>
       <div className="flex flex-col w-auto text-center">
-        <Subtitle showDivider={false} className="relative grid place-items-center">
+        <Subtitle
+          showDivider={false}
+          className="relative grid place-items-center"
+        >
           Gabriel Tavares
           <p className="font-sans text-base relative w-auto">
             Product Designer |{" "}
