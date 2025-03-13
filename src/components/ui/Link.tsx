@@ -17,7 +17,7 @@ const Link = ({
 }: LinkProps) => {
   const childrenArray = React.Children?.toArray(children);
   const baseStyles = "flex gap-3 font-serif text-sm font-semibold";
-  const linkStyles = `${baseStyles} ${className}`.trim();
+  const linkStyles = `${baseStyles} ${className} max-w-max`.trim();
 
   return (
     <a href={url} title={label} target="_blank" className={linkStyles} referrerPolicy="no-referrer">

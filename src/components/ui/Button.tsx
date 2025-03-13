@@ -22,7 +22,7 @@ const Button = ({
   const baseStyles = "flex gap-1 font-serif text-xs font-semibold";
   const outlineStyles =
     style === "outline" ? "border border-current px-2 py-1 rounded" : "";
-  const buttonStyles = `${baseStyles} ${outlineStyles} ${className}`.trim();
+  const buttonStyles = `${baseStyles} ${outlineStyles} ${className} max-w-max`.trim();
 
   return (
     <button type={type} onClick={onClick} className={buttonStyles}>
