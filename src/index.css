@@ -15,11 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-}
-
 body {
   margin: 0;
   padding: 0;
