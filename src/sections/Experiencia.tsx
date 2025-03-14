@@ -1,6 +1,7 @@
 import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { twMerge } from "tailwind-merge";
+import { motion } from "motion/react";
 
 interface ExperienciaProps {
   className?: string;
@@ -8,18 +9,41 @@ interface ExperienciaProps {
 }
 
 const Experiencia = ({ className, id }: ExperienciaProps) => {
+  const animateVariantsLeft = {
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
+  const animateVariantsRight = {
+    hidden: { x: 50, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
   return (
-    <section
+    <motion.section
+      variants={animateVariantsLeft}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
-      className={twMerge("flex mt-20 flex-col gap-8", className)}
+      className={twMerge(
+        "flex mt-20 flex-col gap-8 animate-fadeindown",
+        className
+      )}
     >
       <Title>Experiência</Title>
       <section className="flex flex-col lg:flex-row justify-between gap-16 md:gap-8">
-        <section className="w-full lg:w-[32.5625rem] flex flex-col gap-8">
+        <motion.section
+          variants={animateVariantsLeft}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full lg:w-[32.5625rem] flex flex-col gap-8"
+        >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false} className="relative">
               Desenvolvedora FrontEnd @{" "}
-              <span className="after:content-line after:absolute after:left-60 after:top-4">
+              <span className="after:content-line after:absolute after:left-60 after:top-4 after:animate-pulse">
                 somos ed
               </span>{" "}
             </Subtitle>
@@ -49,9 +73,15 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
               Federation › Microfrontend com Angular › Node.js › Playwright
             </p>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="w-full lg:w-[32.5625rem] flex flex-col gap-8">
+        <motion.section
+          variants={animateVariantsRight}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full lg:w-[32.5625rem] flex flex-col gap-8"
+        >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false}>Desenvolvedora FrontEnd</Subtitle>
             <div>
@@ -78,9 +108,9 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
               WordPress
             </p>
           </div>
-        </section>
+        </motion.section>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

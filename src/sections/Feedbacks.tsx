@@ -3,6 +3,7 @@ import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { motion } from "motion/react";
 
 interface FeedbacksProps {
   className?: string;
@@ -31,8 +32,17 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
 
   const handleLerMais = () => setIsExpanded(!isExpanded);
 
+  const animateVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
   return (
-    <section
+    <motion.section
+      variants={animateVariants}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
       className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
     >
@@ -45,7 +55,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
           Gabriel Tavares
           <p className="font-sans text-base relative w-auto">
             Product Designer |{" "}
-            <span className="after:content-line after:absolute after:left-36 after:top-4">
+            <span className="after:content-line after:absolute after:left-36 after:top-4 after:animate-pulse">
               UX/UI Designer
             </span>
           </p>
@@ -60,7 +70,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
           onClick={() => handleLerMais()}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

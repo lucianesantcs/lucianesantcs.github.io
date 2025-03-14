@@ -4,6 +4,7 @@ import Link from "@/components/ui/Link";
 import { Circle, MoveDown, MoveLeft, MoveRight, MoveUp } from "lucide-react";
 import { useState } from "react";
 import { projects } from "./data";
+import { motion } from "motion/react";
 
 const ProjectSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,15 +19,40 @@ const ProjectSection = () => {
 
   const currentProject = projects[currentIndex];
 
+  const animateVariantsLeft = {
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
+  const animateVariantsRight = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
   return (
-    <section className="flex flex-col xl:flex-row gap-6">
-      <img
+    <motion.section
+      variants={animateVariantsLeft}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8, delay: 0.2 }}
+      className="flex flex-col xl:flex-row gap-6"
+    >
+      <motion.img
+        variants={animateVariantsLeft}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, delay: 0.2 }}
         src={currentProject.image}
         className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded border border-zinc-800"
       />
-      <aside className="w-full flex gap-8 lg:gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458">
+      <motion.aside
+        variants={animateVariantsRight}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="w-full flex gap-8 lg:gap-6 flex-col justify-between order-2 xl:order-1 xl:max-w-458"
+      >
         <div className="flex flex-col gap-6 relative">
-          <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out after:content-line after:absolute after:left-2 after:top-4">
+          <h3 className="font-serif text-xl leading-6 font-medium transition-all duration-300 ease-in-out after:content-line after:absolute after:left-2 after:top-4 after:animate-pulse">
             {currentProject.title}
           </h3>
           <p className="font-sans text-base lg:max-w-540 transition-all duration-300 ease-in-out">
@@ -72,8 +98,14 @@ const ProjectSection = () => {
             showLabel={true}
           />
         </div>
-      </aside>
-      <nav className="flex xl:flex-col gap-2 justify-between xl:justify-center sm:order-1 xl:order-2">
+      </motion.aside>
+      <motion.nav
+        variants={animateVariantsRight}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="flex xl:flex-col gap-2 justify-between xl:justify-center sm:order-1 xl:order-2"
+      >
         <div className="flex xl:flex-col gap-2">
           <button onClick={handlePrevious} className="hidden xl:flex">
             <MoveUp color="#e5e5e5" size={16} />
@@ -113,8 +145,8 @@ const ProjectSection = () => {
           label="Visualizar mais projetos"
           showLabel={true}
         />
-      </nav>
-    </section>
+      </motion.nav>
+    </motion.section>
   );
 };
 

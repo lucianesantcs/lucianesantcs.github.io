@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { useMediaQuery } from "usehooks-ts";
+import { motion } from "motion/react";
 
 const Header = ({ className }: { className?: string }) => {
   const smBreakPoint = useMediaQuery("(max-width: 767px)");
@@ -51,7 +52,10 @@ const Header = ({ className }: { className?: string }) => {
   const navClasses = setNavClasses(nav);
 
   return (
-    <header
+    <motion.header
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
       className={twMerge(
         "bg-zinc-950 sticky top-0 z-10 max-w-144 mx-auto flex justify-between md:justify-start px-3 py-10 md:px-10 lg:px-20 md:gap-14 lg:gap-40",
         className
@@ -85,7 +89,7 @@ const Header = ({ className }: { className?: string }) => {
           <Menu color="#e5e5e5" size={16} />
         )}
       </button>
-    </header>
+    </motion.header>
   );
 };
 
