@@ -4,7 +4,7 @@ export const socialIcons: SocialIconsProps[] = [
     {
       label: "Download CV",
       iconName: "Download",
-      url: "https://lucianesantcs.github.io/assets/docs/curriculo-lucianesantos.pdf",
+      url: "https://lucianesantcs.github.io/public/docs/curriculo-lucianesantos.pdf",
     },
     {
       label: "Github",
