@@ -17,26 +17,25 @@ const Header = ({ className }: { className?: string }) => {
       setNav(false);
     }
 
+    event.preventDefault();
+
     const targetId = event.currentTarget.getAttribute("href")?.replace("#", "");
+    const targetElement = document.getElementById(targetId ?? "");
 
-    if (targetId) {
-      const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerHeight = document.querySelector("header")?.offsetHeight ?? 0;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const scrollPosition =
+        window.scrollY || document.documentElement.scrollTop;
 
-      if (targetElement) {
-        const headerHeight =
-          document.querySelector("header")?.offsetHeight ?? 0;
+      const offsetPosition = elementPosition + scrollPosition - headerHeight;
 
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - headerHeight - 20;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-
-        window.history.pushState({}, "", `#${targetId}`);
-      }
+      window.history.pushState({}, "", `#${targetId}`);
     }
   };
 
