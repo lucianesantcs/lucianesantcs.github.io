@@ -75,6 +75,7 @@ const ProjectSection = () => {
               <Link
                 url={currentProject.primaryButton.url}
                 label={currentProject.primaryButton.label}
+                disabled={currentProject?.primaryButton?.disabled}
                 className="transition-all duration-300 ease-in-out"
               >
                 <Icon iconName="ArrowUpRight" />

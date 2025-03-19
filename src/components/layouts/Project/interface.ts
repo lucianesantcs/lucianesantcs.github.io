@@ -6,6 +6,7 @@ export interface Project {
   primaryButton?: {
     url: string;
     label: string;
+    disabled?: boolean;
   };
   secondaryButton?: {
     url: string;
