@@ -4,8 +4,26 @@ import siteAtualFull from "@/assets/images/projects/site-atual-full.png";
 import buyItFull from "@/assets/images/projects/buy-it-full.png";
 import blogCardsFull from "@/assets/images/projects/blog-cards-full.png";
 import dekan from "@/assets/images/projects/dekan-landing-page.png";
+import mochaMile from "@/assets/images/projects/mocha-mile-light.png";
 
 export const projects: Project[] = [
+  {
+    image: mochaMile,
+    title: "Mocha Mile",
+    description: `Design da página Home uma landing page destacando a experiência premium de cafés artesanais com entrega conveniente.
+       Tipografia baseada no Uber Base, desenhado utilizando Figma e as melhores práticas na separação de Cores, Tipografia, Componentes,
+       entre outros assets. O projeto foi estruturado para permitir expansão futura, possibilitando adaptação para outros nichos e melhorias.`,
+    tags: ["figma", "uiux", "webdesign", "coffee shop", "design", "pessoal"],
+    primaryButton: {
+      url: "#trabalhos",
+      label: "Código (Em breve)",
+      disabled: true,
+    },
+    secondaryButton: {
+      url: "https://www.figma.com/design/AfUQbKpjFLUqoadJxxUU2y/projetos-%2F-designs?node-id=46-1013&t=NrvUqhrwZ8zydspW-1",
+      label: "Layout (Figma)",
+    },
+  },
   {
     image: siteAtualFull,
     title: "Site Pessoal - React 18",
