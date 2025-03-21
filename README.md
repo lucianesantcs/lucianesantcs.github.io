@@ -11,7 +11,7 @@ Plugins Figma:
 Resources:
 - [Ícones](https://lucide.dev/icons/archive) 
 - [Resources do eFront](https://iuricode.com/efront/)
-- [Tipogradia MD](https://m2.material.io/design/typography/the-type-system.html#type-scale)
+- [Tipografia Uber Base](https://base.uber.com/6d2425e9f/p/294ab4-base-design-system)
 - [Paleta de cores - Zinc TailwindCSS](https://tailwindcss.com/docs/colors)
 - [Playlist UI Design](https://www.youtube.com/playlist?list=PLNsOFKwcEPxzvqDJcWEGswBEM_zD5RaXr)
 
