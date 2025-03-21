@@ -10,6 +10,7 @@ Plugins Figma:
 
 Resources:
 - [Ícones](https://lucide.dev/icons/archive) 
+- [Animações Motion](https://motion.dev/) 
 - [Resources do eFront](https://iuricode.com/efront/)
 - [Tipografia Uber Base](https://base.uber.com/6d2425e9f/p/294ab4-base-design-system)
 - [Paleta de cores - Zinc TailwindCSS](https://tailwindcss.com/docs/colors)
