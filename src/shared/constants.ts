@@ -16,11 +16,11 @@ export const socialIcons: SocialIconsProps[] = [
       iconName: "Linkedin16",
       url: "https://www.linkedin.com/in/lucianesantcs",
     },
-    {
-      label: "Dribbble",
-      iconName: "Dribbble16",
-      url: "https://dribbble.com/lucianesantos",
-    },
+    // {
+    //   label: "Dribbble",
+    //   iconName: "Dribbble16",
+    //   url: "https://dribbble.com/lucianesantos",
+    // },
     {
       label: "Email",
       iconName: "Mail",
