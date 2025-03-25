@@ -55,12 +55,14 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             </div>
           </div>
           <p className="font-sans text-base">
-            Atuo no desenvolvimento e manutenção de layouts a partir do Figma,
-            utilizando HTML, SCSS e Typescript com Angular 12+ e os princípios
-            de design de software SOLID, DRY, KISS. Manutenção de código
-            Back-End em NodeJs + GraphQL, e com consumo de API's Rest. Criação
-            de testes automatizados E2E com Playwright em Typescript, seguindo o
-            padrão Page Object Model.
+            Atuo no desenvolvimento de interfaces responsivas e acessíveis,
+            transformando designs do Figma em código em projetos Angular (12 a
+            19). Tenho experiência no consumo de APIs REST em C#, além de já ter
+            realizado manutenção em Back-End com Node.js e GraphQL. Trabalhei
+            com arquitetura de Microfrontend (Module Federation) e atualmente
+            com Single SPA para modularidade e reaproveitamento de código.
+            Também implementei testes automatizados E2E com Playwright e Page
+            Object Model, garantindo a estabilidade das aplicações.
           </p>
           <div className="flex flex-col gap-4">
             <Subtitle className="text-xs" type="h3">
@@ -92,10 +94,12 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             </div>
           </div>
           <p className="font-sans text-base">
-            Dedicação na jornada profissional em desenvolvimento web como
-            autodidata. Criação de projetos pessoais utilizando HTML, CSS e
-            JavaScript, além de frameworks como Angular e React. Criação de
-            interfaces utilizando o Figma.
+            Dedicação na jornada profissional em desenvolvimento web adquirindo
+            conhecimento para base de tecnologia como autodidata, criando
+            projetos pessoais utilizando frameworks como Angular e React, além
+            de desenhar interfaces utilizando o Figma. Mantenho o conhecimento
+            contínuo em busca de obter o máximo para desenvolvimento de carreira
+            e metas para o futuro.
           </p>
           <div className="flex flex-col gap-4">
             <Subtitle className="text-xs" type="h3">

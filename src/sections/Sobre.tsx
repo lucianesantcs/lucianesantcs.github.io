@@ -67,12 +67,13 @@ const Sobre = ({ className, id }: SobreProps) => {
           <span className="after:content-straightArrow after:absolute after:left-80 after:top-custom-negative-10 after:animate-bounce">
             três anos
           </span>{" "}
-          de experiência em desenvolvimento web dominando as linguagens HTML,
-          CSS/Sass, JavaScript e TypeScript. Atualmente cursando graduação de
-          Análise e Desenvolvimento de Sistemas. Atuo na criação de layouts
-          utilizando o Angular e biblioteca ReactJS. Possuo conhecimento de User
-          Interface/User Experience para o design de interfaces utilizando a
-          ferramenta Figma.
+          de experiência em desenvolvimento web. Atuo no desenvolvimento de
+          layouts utilizando o Angular 12+ e biblioteca ReactJS. Possuo
+          conhecimento de User Interface/User Experience para o design e
+          prototipagem de interfaces utilizando a ferramenta Figma. Comecei como
+          autodidata dominando as linguagens HTML, CSS/SASS,
+          JavaScript/TypeScript e atualmente estou cursando graduação de Análise
+          e Desenvolvimento de Sistemas na universidade Newton Paiva.
         </p>
       </motion.section>
     </section>
