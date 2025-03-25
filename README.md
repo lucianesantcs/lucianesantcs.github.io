@@ -1,4 +1,4 @@
-![image](https://lucianesantcs.github.io/assets/site-atual-full-C7BkqvgD.png)
+![image](src/assets/images/projects/site-atual-full.gif)
 
 ## Design e Resources:
 - [Link do figma](https://www.figma.com/design/6gDG8RvO69NgvcCSluzW45/projetos-%2F-site-v.02?node-id=716-3286&t=tNZWogXF2Fpefw2I-1)
