@@ -1,4 +1,3 @@
-import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import Link from "@/components/ui/Link";
 import { Circle, MoveDown, MoveLeft, MoveRight, MoveUp } from "lucide-react";
