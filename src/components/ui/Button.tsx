@@ -21,7 +21,8 @@ const Button = ({
   disabled = false,
   children,
 }: ButtonProps) => {
-  const baseStyles = "flex gap-1 font-serif text-xs font-semibold";
+  const baseStyles =
+    "flex gap-1 font-serif text-xs font-semibold hover:text-amber-400 transition-colors duration-300 ease-in-out";
   const outlineStyles =
     style === "outline" ? "border border-current px-2 py-1 rounded" : "";
   const isDisabledClass = disabled ? "disabled:text-zinc-500" : "";

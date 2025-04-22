@@ -66,19 +66,39 @@ const Header = ({ className }: { className?: string }) => {
         alt="Logo com símbolo de código e camadas representando design"
       />
       <nav className={twMerge(`${navClasses} md:flex-row md:gap-16`)}>
-        <a href="#sobre" onClick={(event) => handleScroll(event)}>
+        <a
+          className="hover:text-amber-400 transition-colors duration-300 ease-in-out"
+          href="#sobre"
+          onClick={(event) => handleScroll(event)}
+        >
           Sobre
         </a>
-        <a href="#experiencia" onClick={(event) => handleScroll(event)}>
+        <a
+          className="hover:text-amber-400 transition-colors duration-300 ease-in-out"
+          href="#experiencia"
+          onClick={(event) => handleScroll(event)}
+        >
           Experiência
         </a>
-        <a href="#trabalhos" onClick={(event) => handleScroll(event)}>
+        <a
+          className="hover:text-amber-400 transition-colors duration-300 ease-in-out"
+          href="#trabalhos"
+          onClick={(event) => handleScroll(event)}
+        >
           Trabalhos
         </a>
-        <a href="#feedbacks" onClick={(event) => handleScroll(event)}>
+        <a
+          className="hover:text-amber-400 transition-colors duration-300 ease-in-out"
+          href="#feedbacks"
+          onClick={(event) => handleScroll(event)}
+        >
           Feedbacks
         </a>
-        <a href="#contato" onClick={(event) => handleScroll(event)}>
+        <a
+          className="hover:text-amber-400 transition-colors duration-300 ease-in-out"
+          href="#contato"
+          onClick={(event) => handleScroll(event)}
+        >
           Contato
         </a>
       </nav>

@@ -15,15 +15,23 @@ const Link = ({
   className,
   url,
   children,
-  disabled
+  disabled,
 }: LinkProps) => {
   const childrenArray = React.Children?.toArray(children);
-  const baseStyles = "flex gap-3 font-serif text-sm font-semibold";
-  const isDisabledClass = disabled ? 'text-zinc-500 cursor-not-allowed' : "";
-  const linkStyles = `${baseStyles} ${className} max-w-max ${isDisabledClass}`.trim();
+  const baseStyles =
+    "flex gap-3 font-serif text-sm font-semibold hover:text-amber-400 transition-colors duration-300 ease-in-out";
+  const isDisabledClass = disabled ? "text-zinc-500 cursor-not-allowed" : "";
+  const linkStyles =
+    `${baseStyles} ${className} max-w-max ${isDisabledClass} `.trim();
 
   return (
-    <a href={disabled ? '' : url} title={label} target="_blank" className={linkStyles} referrerPolicy="no-referrer">
+    <a
+      href={disabled ? "" : url}
+      title={label}
+      target="_blank"
+      className={linkStyles}
+      referrerPolicy="no-referrer"
+    >
       {childrenArray?.length > 1 ? childrenArray[0] : ""}
       {showLabel && label}
       {childrenArray?.length > 1 ? childrenArray[1] : childrenArray[0]}
