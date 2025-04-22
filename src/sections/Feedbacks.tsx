@@ -66,6 +66,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
           {isExpanded ? descricao : descricaoTruncada}
         </p>
         <Button
+          className="text-amber-400"
           label={isExpanded ? "Ler menos" : "Ler mais"}
           onClick={() => handleLerMais()}
         />

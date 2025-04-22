@@ -92,12 +92,13 @@ const ProjectSection = () => {
             )}
           </div>
 
-          <Button
-            disabled={true}
-            className="hidden xl:flex"
+          <Link
+            url="https://github.com/lucianesantcs?tab=repositories&q=&type=&language=&sort=stargazers"
             label="Visualizar mais projetos"
-            showLabel={true}
-          />
+            className="transition-all duration-300 ease-in-out text-amber-400 hidden xl:flex"
+          >
+            <Icon iconName="ArrowUpRight" />
+          </Link>
         </div>
       </motion.aside>
       <motion.nav
@@ -125,9 +126,9 @@ const ProjectSection = () => {
               }}
             >
               <Circle
-                color="#e5e5e5"
+                color={currentIndex === index ? "#FFB900" : "#e5e5e5"}
                 size={16}
-                fill={currentIndex === index ? "#e5e5e5" : "none"}
+                fill={currentIndex === index ? "#FFB900" : "none"}
               />
             </a>
           ))}
@@ -140,12 +141,13 @@ const ProjectSection = () => {
           </button>
         </div>
 
-        <Button
-          disabled={true}
-          className="xl:hidden"
+        <Link
+          url="https://github.com/lucianesantcs?tab=repositories&q=&type=&language=&sort=stargazers"
           label="Visualizar mais projetos"
-          showLabel={true}
-        />
+          className="transition-all duration-300 ease-in-out text-amber-400 xl:hidden"
+        >
+          <Icon iconName="ArrowUpRight" />
+        </Link>
       </motion.nav>
     </motion.section>
   );

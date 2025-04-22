@@ -63,9 +63,9 @@ const Sobre = ({ className, id }: SobreProps) => {
       >
         <Title>Sobre</Title>
         <p className="font-sans text-base relative">
-          Profissional Front-End com mais de{" "}
+          Profissional Front-End com cerca de{" "}
           <span className="after:content-straightArrow after:absolute after:left-80 after:top-custom-negative-10 after:animate-bounce">
-            três anos
+            4 anos
           </span>{" "}
           de experiência em desenvolvimento web. Atuo no desenvolvimento de
           layouts utilizando o Angular 12+ e biblioteca ReactJS. Possuo

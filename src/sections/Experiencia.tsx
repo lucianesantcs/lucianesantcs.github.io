@@ -2,6 +2,8 @@ import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { twMerge } from "tailwind-merge";
 import { motion } from "motion/react";
+import Link from "@/components/ui/Link";
+import Icon from "@/components/ui/Icon";
 
 interface ExperienciaProps {
   className?: string;
@@ -32,13 +34,13 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
       )}
     >
       <Title>Experiência</Title>
-      <section className="flex flex-col lg:flex-row justify-between gap-16 md:gap-8">
+      <section className="flex flex-col justify-between gap-16 md:gap-20">
         <motion.section
           variants={animateVariantsLeft}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-[32.5625rem] flex flex-col gap-8"
+          className="w-full lg:w-[60rem] flex flex-col gap-8"
         >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false} className="relative">
@@ -54,7 +56,7 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
               <p className="font-sans text-xs">Maio 2021 - atualmente</p>
             </div>
           </div>
-          <p className="font-sans text-base">
+          <p className="flex flex-col font-sans text-base gap-2">
             Atuo no desenvolvimento de interfaces responsivas e acessíveis,
             transformando designs do Figma em código em projetos Angular (12 a
             19). Tenho experiência no consumo de APIs REST em C#, além de já ter
@@ -63,6 +65,13 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             com Single SPA para modularidade e reaproveitamento de código.
             Também implementei testes automatizados E2E com Playwright e Page
             Object Model, garantindo a estabilidade das aplicações.
+            <Link
+              url="https://www.linkedin.com/in/lucianesantcs/"
+              label="Ler mais"
+              className="transition-all duration-300 ease-in-out text-amber-400"
+            >
+              <Icon iconName="ArrowUpRight" />
+            </Link>
           </p>
           <div className="flex flex-col gap-4">
             <Subtitle className="text-xs" type="h3">
@@ -82,7 +91,7 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-[32.5625rem] flex flex-col gap-8"
+          className="w-full lg:w-[60rem] flex flex-col gap-8"
         >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false}>Desenvolvedora FrontEnd</Subtitle>
@@ -94,12 +103,17 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             </div>
           </div>
           <p className="font-sans text-base">
-            Dedicação na jornada profissional em desenvolvimento web adquirindo
-            conhecimento para base de tecnologia como autodidata, criando
-            projetos pessoais utilizando frameworks como Angular e React, além
-            de desenhar interfaces utilizando o Figma. Mantenho o conhecimento
-            contínuo em busca de obter o máximo para desenvolvimento de carreira
-            e metas para o futuro.
+            Iniciei minha jornada como desenvolvedora de forma autodidata,
+            estudando tecnologias web e aplicando os conhecimentos em projetos
+            práticos hospedados no GitHub. Criei aplicações completas utilizando
+            HTML, CSS/SASS, JavaScript e posteriormente frameworks como Angular,
+            React e Vite. Desenvolvi projetos autorais com foco em usabilidade,
+            responsividade e acessibilidade, como Blog Cards, Private Desk,
+            Mocha Mile, Site Pessoal, Tasking, entre outros. Estruturei soluções
+            com integração de APIs públicas, manipulação de dados, e
+            gerenciamento de estado com React Hooks. Pratiquei testes,
+            componentização e boas práticas de UI/UX baseadas em designs
+            próprios no Figma.
           </p>
           <div className="flex flex-col gap-4">
             <Subtitle className="text-xs" type="h3">
