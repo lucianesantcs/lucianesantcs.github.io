@@ -1,6 +1,6 @@
 import logo24 from "@/assets/images/svg/logo24.svg";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { useMediaQuery } from "usehooks-ts";
 import { motion } from "motion/react";

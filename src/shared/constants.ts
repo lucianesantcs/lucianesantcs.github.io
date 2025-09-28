@@ -1,11 +1,11 @@
 import { SocialIconsProps } from "@/components/ui/SocialIcons";
 
 export const socialIcons: SocialIconsProps[] = [
-    {
-      label: "Download CV",
-      iconName: "Download",
-      url: "./LUCIANE_SANTOS_CURRICULO.pdf",
-    },
+    // {
+    //   label: "Download CV",
+    //   iconName: "Download",
+    //   url: "./LUCIANE_SANTOS_CURRICULO.pdf",
+    // },
     {
       label: "Github",
       iconName: "Github16",

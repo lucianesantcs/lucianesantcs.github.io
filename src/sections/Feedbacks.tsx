@@ -46,32 +46,66 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
       id={id}
       className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
     >
-      <Title align="justify-center">Feedbacks</Title>
-      <div className="flex flex-col w-auto text-center">
-        <Subtitle
-          showDivider={false}
-          className="relative grid place-items-center"
-        >
-          Gabriel Tavares
-          <p className="font-sans text-base relative w-auto">
-            Product Designer |{" "}
-            <span className="after:content-line after:absolute after:left-36 after:top-4 after:animate-pulse">
-              UX/UI Designer
-            </span>
-          </p>
-        </Subtitle>
-      </div>
-      <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
-        <p className="font-sans text-base">
-          {isExpanded ? descricao : descricaoTruncada}
-        </p>
-        <Button
-          className="text-amber-400"
-          label={isExpanded ? "Ler menos" : "Ler mais"}
-          onClick={() => handleLerMais()}
-        />
-      </div>
-    </motion.section>
+      <motion.section
+        variants={animateVariants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, delay: 0.2 }}
+        id={id}
+        className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
+      >
+        <Title align="justify-center">Feedbacks</Title>
+
+        <div className="flex flex-col md:flex-row gap-12 mt-8">
+          <div className="w-90 flex flex-col gap-4">
+            <div className="flex flex-col w-auto text-center">
+              <Subtitle
+                showDivider={false}
+                className="relative grid place-items-center"
+              >
+                Gabriel Tavares
+                <p className="font-sans text-base relative w-auto">
+                  Product Designer |{" "}
+                  <span className="after:content-line after:absolute after:left-36 after:top-4 after:animate-pulse">
+                    UX/UI Designer
+                  </span>
+                </p>
+              </Subtitle>
+            </div>
+            <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
+              <p className="font-sans text-base">
+                {isExpanded ? descricao : descricaoTruncada}
+              </p>
+              <Button
+                className="text-amber-400"
+                label={isExpanded ? "Ler menos" : "Ler mais"}
+                onClick={() => handleLerMais()}
+              />
+            </div>
+          </div>
+
+          <div className="w-90 flex flex-col gap-4">
+            <div className="flex flex-col w-auto text-center">
+              <Subtitle
+                showDivider={false}
+                className="relative grid place-items-center"
+              >
+                Mariana Hentz
+                <p className="font-sans text-base relative w-auto">
+                  Product Manager
+                </p>
+              </Subtitle>
+            </div>
+            <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
+              <p className="font-sans text-base">
+                Tive a oportunidade de trabalhar com a Lu na sua trajetória na ed e ver seu crescimento de perto!
+                Trabalhar com a Luciane é fácil: ótima comunicação, posicionamentos assertivos, foco em entregas de alta qualidade e muito comprometida com os projetos e com a empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+    </motion.section >
   );
 };
 

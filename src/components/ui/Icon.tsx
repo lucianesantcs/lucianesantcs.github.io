@@ -31,7 +31,7 @@ const Icon = ({ iconName, iconSize = 16 }: IconsProps) => {
     const Icon = lucideIconMap[iconName as LucideIconType];
     return <Icon size={iconSize} />;
   } else {
-    return <img src={staticIconMap[iconName as StaticIconType]} width={iconSize} height={iconSize} />;
+    return <img src={staticIconMap[iconName as StaticIconType]} width={iconSize} height={iconSize}  alt={iconName}/>;
   }
 };
 
