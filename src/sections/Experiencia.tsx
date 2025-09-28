@@ -16,11 +16,6 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
     visible: { x: 0, opacity: 1 },
   };
 
-  const animateVariantsRight = {
-    hidden: { x: 50, opacity: 0 },
-    visible: { x: 0, opacity: 1 },
-  };
-
   return (
     <motion.section
       variants={animateVariantsLeft}
