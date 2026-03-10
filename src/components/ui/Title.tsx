@@ -20,8 +20,8 @@ const Title = ({ children, className, align = "justify-start" }: TitleProps) => 
           {children}
         </h1>
         <div className="flex gap-2">
-          <div className="h-[2px] w-10 bg-current"></div>
-          <div className="h-[2px] w-2 bg-current"></div>
+          <div className="h-[1px] w-10 bg-current"></div>
+          <div className="h-[1px] w-2 bg-current"></div>
         </div>
       </div>
     </div>

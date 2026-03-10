@@ -35,7 +35,7 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: ["easeIn", "easeOut"] }}
-        className="bg-zinc-950 sticky bottom-0 z-10 max-w-144 mx-auto flex w-full justify-between px-3 py-10 md:px-10 lg:px-20 md:gap-28 lg:gap-40 mt-16"
+        className="bg-zinc-950 sticky bottom-0 z-10 max-w-144 mx-auto flex w-full justify-between px-3 py-10 md:gap-28 lg:gap-40 mt-16"
       >
         <span className="font-serif">
           © 2025 <strong>Luciane Santos</strong>

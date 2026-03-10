@@ -21,7 +21,7 @@ const Trabalhos = ({ className, id }: TrabalhosProps) => {
       whileInView="visible"
       transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
-      className={twMerge("flex mt-20 flex-col gap-8", className)}
+      className={twMerge("flex md:mt-20 flex-col gap-8", className)}
     >
       <Title>Trabalhos</Title>
       <ProjectSection />

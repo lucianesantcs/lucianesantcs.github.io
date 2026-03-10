@@ -44,7 +44,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
       whileInView="visible"
       transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
-      className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
+      className={twMerge("flex flex-col w-full gap-8 md:mt-28", className)}
     >
       <motion.section
         variants={animateVariants}
@@ -52,7 +52,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
         whileInView="visible"
         transition={{ duration: 0.8, delay: 0.2 }}
         id={id}
-        className={twMerge("flex flex-col w-full gap-8 mt-28", className)}
+        className={twMerge("flex flex-col w-full gap-8 md:mt-28", className)}
       >
         <Title align="justify-center">Feedbacks</Title>
 
@@ -65,10 +65,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
               >
                 Gabriel Tavares
                 <p className="font-sans text-base relative w-auto">
-                  Product Designer |{" "}
-                  <span className="after:content-line after:absolute after:left-36 after:top-4 after:animate-pulse">
-                    UX/UI Designer
-                  </span>
+                  Product Designer | UX/UI Designer
                 </p>
               </Subtitle>
             </div>

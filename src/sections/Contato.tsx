@@ -30,7 +30,7 @@ const Contato = ({ className, id }: ContatoProps) => {
       whileInView="visible"
       transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
-      className={twMerge("flex flex-col w-full gap-6 mt-28", className)}
+      className={twMerge("flex flex-col w-full gap-6 md:my-28", className)}
     >
       <Title>Entre em contato</Title>
       <section className="flex flex-col lg:flex-row gap-4 lg:gap-56">
@@ -54,6 +54,9 @@ const Contato = ({ className, id }: ContatoProps) => {
             projeto seja como design ou desenvolvimento front-end.
           </p>
         </motion.section>
+
+        <div className="hidden lg:block w-0.5 h-auto bg-zinc-900"></div>
+
         <motion.section
           variants={animateVariantsRight}
           initial="hidden"

@@ -4,7 +4,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["Work Sans", "sans-serif"],
+      sans: ["Roboto", "sans-serif"],
       serif: ["Bricolage Grotesque", "serif"],
     },
     extend: {

@@ -16,6 +16,41 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
     visible: { x: 0, opacity: 1 },
   };
 
+  const experiencia = {
+    ed: {
+      tags: [
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Module Federation",
+        "Single-SPA",
+        "Playwright",
+        "GraphQL",
+        "Node.js",
+      ],
+    },
+    icatu: {
+      tags: [
+        "Angular 18+",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Module Federation",
+        "Microfrontends",
+        "Multitenant",
+        "GraphQL",
+        "C#",
+        "Node.js",
+        "Figma",
+      ],
+    },
+  };
+
   return (
     <motion.section
       variants={animateVariantsLeft}
@@ -24,25 +59,29 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
       transition={{ duration: 0.8, delay: 0.2 }}
       id={id}
       className={twMerge(
-        "flex mt-20 flex-col gap-8 animate-fadeindown",
-        className
+        "flex md:mt-20 flex-col gap-8 animate-fadeindown",
+        className,
       )}
     >
       <Title>Experiência</Title>
-      <section className="flex flex-col justify-between gap-16 md:gap-20">
+      <Link
+        url="https://www.linkedin.com/in/lucianesantcs/"
+        label="linkedin"
+        className="transition-all duration-300 ease-in-out text-amber-400"
+      >
+        <Icon iconName="ArrowUpRight" />
+      </Link>
+      <section className="flex flex-col justify-between gap-16 md:gap-20 md:flex-row">
         <motion.section
-            variants={animateVariantsLeft}
-            initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full lg:w-[60rem] flex flex-col gap-8"
+          variants={animateVariantsLeft}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full lg:w-[60rem] flex flex-col gap-8"
         >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false} className="relative">
-              Desenvolvedora FrontEnd @{" "}
-              <span className="after:content-line after:absolute after:left-60 after:top-4 after:animate-pulse">
-                icatu seguros
-              </span>{" "}
+              Desenvolvedora FrontEnd @ icatu seguros
             </Subtitle>
             <div>
               <p className="font-serif text-sm font-semibold">
@@ -52,20 +91,29 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             </div>
           </div>
           <p className="flex flex-col font-sans text-base gap-2">
-            
+            Atuação como referência técnica em Front-end, participando de
+            decisões arquiteturais e definição de boas práticas em aplicações
+            Angular 18+ com arquitetura de Microfrontends (Module Federation) em
+            ambiente multitenant. Desenvolvimento de interfaces a partir de
+            Figma em colaboração com UX, evolução de Design System e criação de
+            componentes reutilizáveis. Integração com APIs REST em C#, além de
+            contribuições pontuais em Node.js e GraphQL.
           </p>
-          {/*<div className="flex flex-col gap-4">*/}
-          {/*  <Subtitle className="text-xs" type="h3">*/}
-          {/*    Skills e tecnologias*/}
-          {/*  </Subtitle>*/}
-          {/*  <p className="font-sans text-sm">*/}
-          {/*    HTML5 › CSS › SASS › Frontend Development › Figma › Google*/}
-          {/*    Analytics › Web Design Responsivo › Desenvolvimento Web ›*/}
-          {/*    TypeScript › JavaScript › GraphQL › Angular Framework 12+ › Module*/}
-          {/*    Federation › Microfrontend com Angular › Node.js › Playwright*/}
-          {/*  </p>*/}
-          {/*</div>*/}
+          <div className="flex flex-col gap-4">
+            <ul className="flex gap-3 lg:max-w-96 flex-wrap transition-all duration-300 ease-in-out">
+              {experiencia.icatu.tags.map((tag, index) => (
+                <li
+                  key={index}
+                  className="bg-zinc-900 font-bold border p-1 rounded transition-all duration-300 ease-in-out"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
         </motion.section>
+
+        <div className="hidden lg:block w-0.5 md:h-auto bg-zinc-900"></div>
 
         <motion.section
           variants={animateVariantsLeft}
@@ -76,10 +124,7 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
         >
           <div className="flex flex-col gap-2">
             <Subtitle showDivider={false} className="relative">
-              Desenvolvedora FrontEnd @{" "}
-              <span className="after:content-line after:absolute after:left-60 after:top-4 after:animate-pulse">
-                somos ed
-              </span>{" "}
+              Desenvolvedora FrontEnd @ somos ed
             </Subtitle>
             <div>
               <p className="font-serif text-sm font-semibold">
@@ -89,30 +134,26 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
             </div>
           </div>
           <p className="flex flex-col font-sans text-base gap-2">
-            Atuei no desenvolvimento de interfaces responsivas e acessíveis,
-            transformando designs do Figma em código em projetos Angular (12 a
-            19). Experiência no consumo de APIs REST em C#, além de já ter
-            realizado manutenção em Back-End com Node.js e GraphQL. Trabalhei
-            com arquitetura de Microfrontend (Module Federation) e Single SPA para modularidade e reaproveitamento de código.
-            Também implementei testes automatizados E2E com Playwright e Page
-            Object Model, garantindo a estabilidade das aplicações.
-            <Link
-              url="https://www.linkedin.com/in/lucianesantcs/"
-              label="Ler mais"
-              className="transition-all duration-300 ease-in-out text-amber-400"
-            >
-              <Icon iconName="ArrowUpRight" />
-            </Link>
+            Desenvolvimento de aplicações Angular (12–19) com interfaces
+            responsivas e acessíveis, implementadas a partir de protótipos do
+            Figma. Experiência com arquitetura de Microfrontends utilizando
+            Module Federation e Single-SPA, consumo de APIs REST em C# e
+            manutenção pontual em Node.js e GraphQL. Implementação de testes E2E
+            com Playwright e Page Object Model para garantir estabilidade das
+            aplicações.
           </p>
           <div className="flex flex-col gap-4">
-            <Subtitle className="text-xs" type="h3">
-              Skills e tecnologias
-            </Subtitle>
-            <p className="font-sans text-sm">
-              HTML5 › CSS › SASS › Frontend Development › Figma › Google
-              Analytics › Web Design Responsivo › Desenvolvimento Web ›
-              TypeScript › JavaScript › GraphQL › Angular Framework 12+ › Module
-              Federation › Microfrontend com Angular › Node.js › Playwright
+            <p className="font-serif text-sm">
+              <ul className="flex gap-3 lg:max-w-96 flex-wrap transition-all duration-300 ease-in-out">
+                {experiencia.ed.tags.map((tag, index) => (
+                  <li
+                    key={index}
+                    className="bg-zinc-900 font-bold border p-1 rounded transition-all duration-300 ease-in-out"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </p>
           </div>
         </motion.section>

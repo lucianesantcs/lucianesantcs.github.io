@@ -41,7 +41,7 @@ const ProjectSection = () => {
         whileInView="visible"
         transition={{ duration: 0.8, delay: 0.2 }}
         src={currentProject.image}
-        className="xl:max-w-3xl h-auto transition-opacity duration-300 relative overflow-hidden rounded border border-zinc-800"
+        className="xl:max-w-3xl flex h-auto transition-opacity duration-300 relative overflow-hidden rounded border border-zinc-800"
       />
       <motion.aside
         variants={animateVariantsRight}
@@ -105,7 +105,7 @@ const ProjectSection = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="flex xl:flex-col gap-2 justify-between xl:justify-center sm:order-1 xl:order-2"
+        className="flex flex-col gap-3 justify-between xl:justify-center sm:order-1 xl:order-2"
       >
         <div className="flex xl:flex-col gap-2">
           <button onClick={handlePrevious} className="hidden xl:flex">

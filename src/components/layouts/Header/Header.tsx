@@ -42,7 +42,7 @@ const Header = ({ className }: { className?: string }) => {
 
   function setNavClasses(nav: boolean) {
     if (nav) {
-      return "flex flex-col gap-5 absolute text-zinc-950 bg-zinc-50 p-4 rounded w-5/6 box-border top-custom-10 right-5 z-10";
+      return "flex flex-col gap-5 absolute text-zinc-950 bg-zinc-50 p-4 rounded w-5/6 box-border top-custom-10 z-10";
     } else if (smBreakPoint) {
       return "hidden";
     }
@@ -57,8 +57,8 @@ const Header = ({ className }: { className?: string }) => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.2 }}
       className={twMerge(
-        "bg-zinc-950 sticky top-0 z-10 max-w-144 mx-auto flex justify-between md:justify-start px-3 py-10 md:px-10 lg:px-20 md:gap-14 lg:gap-40",
-        className
+        "bg-zinc-950 sticky top-0 z-10 max-w-144 mx-auto flex justify-between md:justify-start px-3 py-10 md:gap-14 lg:gap-40",
+        className,
       )}
     >
       <img
