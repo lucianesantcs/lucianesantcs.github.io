@@ -35,18 +35,20 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: ["easeIn", "easeOut"] }}
-        className="bg-zinc-950 sticky bottom-0 z-10 max-w-144 mx-auto flex w-full justify-between px-3 py-10 md:gap-28 lg:gap-40 mt-16"
+        className="sticky bottom-0 z-20 w-full mt-16 bg-zinc-950/70 backdrop-blur-md supports-[backdrop-filter]:bg-zinc-950/60 border-t border-zinc-800/40"
       >
-        <span className="font-serif">
-          © 2025 <strong>Luciane Santos</strong>
-        </span>
-        <ChevronUp
-          className="cursor-pointer"
-          aria-description="Voltar para topo"
-          color="#e5e5e5"
-          size={16}
-          onClick={backToTop}
-        />
+        <div className="max-w-144 mx-auto flex w-full justify-between px-3 py-10 md:gap-28 lg:gap-40">
+          <span className="font-serif">
+            © 2025 <strong>Luciane Santos</strong>
+          </span>
+          <ChevronUp
+            className="cursor-pointer"
+            aria-description="Voltar para topo"
+            color="#e5e5e5"
+            size={16}
+            onClick={backToTop}
+          />
+        </div>
       </motion.footer>
     )
   );
