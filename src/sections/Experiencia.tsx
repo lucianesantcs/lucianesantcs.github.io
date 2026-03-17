@@ -64,13 +64,13 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
       )}
     >
       <Title>Experiência</Title>
-      <Link
+      {/* <Link
         url="https://www.linkedin.com/in/lucianesantcs/"
         label="linkedin"
         className="transition-all duration-300 ease-in-out text-amber-400"
       >
         <Icon iconName="ArrowUpRight" />
-      </Link>
+      </Link> */}
       <section className="flex flex-col justify-between gap-16 md:gap-20 md:flex-row">
         <motion.section
           variants={animateVariantsLeft}
@@ -113,7 +113,13 @@ const Experiencia = ({ className, id }: ExperienciaProps) => {
           </div>
         </motion.section>
 
-        <div className="hidden lg:block w-0.5 md:h-auto bg-zinc-900"></div>
+        <motion.div
+          variants={animateVariantsLeft}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="hidden lg:block w-0.5 md:h-auto bg-zinc-900"
+        ></motion.div>
 
         <motion.section
           variants={animateVariantsLeft}

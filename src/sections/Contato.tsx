@@ -55,7 +55,13 @@ const Contato = ({ className, id }: ContatoProps) => {
           </p>
         </motion.section>
 
-        <div className="hidden lg:block w-0.5 h-auto bg-zinc-900"></div>
+        <motion.div
+          variants={animateVariantsLeft}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="hidden lg:block w-0.5 md:h-auto bg-zinc-900"
+        ></motion.div>
 
         <motion.section
           variants={animateVariantsRight}

@@ -61,7 +61,7 @@ const ProjectSection = () => {
             {currentProject.tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-zinc-900 border p-1 rounded transition-all duration-300 ease-in-out"
+                className="bg-zinc-900 font-bold border p-1 rounded transition-all duration-300 ease-in-out"
               >
                 {tag}
               </li>

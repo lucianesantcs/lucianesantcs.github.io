@@ -39,7 +39,7 @@ const Footer = () => {
       >
         <div className="max-w-144 mx-auto flex w-full justify-between px-3 py-10 md:gap-28 lg:gap-40">
           <span className="font-serif">
-            © 2025 <strong>Luciane Santos</strong>
+            © 2026 <strong>Luciane Santos</strong>
           </span>
           <ChevronUp
             className="cursor-pointer"

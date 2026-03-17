@@ -56,7 +56,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
       >
         <Title align="justify-center">Feedbacks</Title>
 
-        <div className="flex flex-col md:flex-row gap-12 mt-8">
+        <div className="flex flex-col md:flex-row gap-12 mt-8 justify-center">
           <div className="w-90 flex flex-col gap-4">
             <div className="flex flex-col w-auto text-center">
               <Subtitle
@@ -69,7 +69,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
                 </p>
               </Subtitle>
             </div>
-            <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
+            <div className="flex flex-col gap-4 item-start max-w-540 mx-auto">
               <p className="font-sans text-base">
                 {isExpanded ? descricao : descricaoTruncada}
               </p>
@@ -93,7 +93,7 @@ const Feedbacks = ({ className, id }: FeedbacksProps) => {
                 </p>
               </Subtitle>
             </div>
-            <div className="flex flex-col gap-4 item-start max-w-632 mx-auto">
+            <div className="flex flex-col gap-4 item-start max-w-540 mx-auto">
               <p className="font-sans text-base">
                 Tive a oportunidade de trabalhar com a Lu na sua trajetória na ed e ver seu crescimento de perto!
                 Trabalhar com a Luciane é fácil: ótima comunicação, posicionamentos assertivos, foco em entregas de alta qualidade e muito comprometida com os projetos e com a empresa.
