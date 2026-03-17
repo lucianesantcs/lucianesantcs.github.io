@@ -2,8 +2,6 @@ import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
 import { twMerge } from "tailwind-merge";
 import { motion } from "motion/react";
-import Link from "@/components/ui/Link";
-import Icon from "@/components/ui/Icon";
 
 interface ExperienciaProps {
   className?: string;
